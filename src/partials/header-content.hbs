@@ -8,6 +8,11 @@
         <span></span>
       </button>
     </div>
+    {{#if env.ALGOLIA_API_KEY}}
+    <div class="navbar-item">
+      <input id="search-input" type="text" placeholder="Search docs">
+    </div>
+    {{/if}}
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
         <img src="{{{uiRootPath}}}/img/biGENiUS_db.png" style="width: 180px;height: 50px; margin-right: 10px; position: absolute;top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%);" /> 
